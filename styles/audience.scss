@@ -1,0 +1,168 @@
+.audience {
+  padding: 51px 15px;
+  background-color: $color-light-blue;
+
+  @include for-large-up {
+    padding: 0;
+  }
+
+  &__container {
+    @include for-large-up {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__subtitle {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 17px;
+    line-height: 34px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 108px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+
+    @include for-large-up {
+      margin-top: 24px;
+      margin-bottom: 0;
+      max-width: 555px;
+      line-height: 56px;
+      font-size: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+  &__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+
+    @include for-large-up {
+      margin-top: 30px;
+      margin-bottom: 0;
+      max-width: 555px;
+    }
+  }
+  &__buttons {
+    @include for-large-down {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @include for-large-up {
+      display: flex;
+      margin-top: 31px;
+    }
+  }
+  &__button {
+    @include for-large-down {
+      margin-bottom: 12px;
+      width: 290px !important; 
+    }
+    &:first-child {
+      @include for-large-up {
+        margin-right: 10px;
+        flex-shrink: 0;
+      }
+    }
+    &:last-child {
+      color: #000;
+    }
+  }
+  &__choice {
+    @include for-large-up {
+      display: flex;
+      justify-content: center;
+      width: 1140px;
+      margin: 111px auto 110px auto;
+    }
+  }
+  &__visitors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    max-height: 300px;
+    max-width: 290px;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      $color-white;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 30px;
+      width: 262px;
+    }
+    &:first-child {
+      margin-top: 28px;
+
+      @include for-large-up {
+        margin-top: 0;
+        width: 262px;
+      }
+    }
+
+    &:hover {
+      background: $color-hover;
+      box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+      cursor: pointer;
+    }
+  }
+  &__img {
+    margin-top: 22px;
+
+    &_first {
+      width: 138px;
+      height: 195px;
+    }
+    &_second {
+      width: 142px;
+      height: 195px;
+    }
+    &_third {
+      width: 160px;
+      height: 195px;
+    }
+    &_fought {
+      width: 119px;
+      height: 195px;
+    }
+  }
+
+  &__caption {
+    margin-top: 22px;
+    margin-bottom: 33px;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #2b292d;
+  }
+}

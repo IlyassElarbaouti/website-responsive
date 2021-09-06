@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+@import 'breakpoints.scss';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'footer.scss';
+@import 'headline.scss';
+@import 'tips.scss';
+@import 'order.scss';
+@import 'audience.scss';
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: $color-black;
+}
+.page {
+  width: 100%;
+  overflow-x: hidden;
+
+  @include for-large-up {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1400px;
+  }
+}
+//common
+.action-button {
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $color-blue;
+  color: $color-white;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+.action-learn-more-btn {
+  width: 158px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $color-white;
+  color: $color-blue;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+.hide_desktop {
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include for-large-down {
+    display: none;
+  }
+}
+
