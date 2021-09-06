@@ -8,7 +8,7 @@ The tech stack is:
 - CSS3
 - Flexbox
 - Sass (Scss)
-- BEM methodology
+- BEM methodology 
 
 #### Author
 
