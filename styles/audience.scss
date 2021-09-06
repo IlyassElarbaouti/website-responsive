@@ -95,6 +95,7 @@
       margin: 111px auto 110px auto;
     }
   }
+
   &__visitors {
     display: flex;
     flex-direction: column;
@@ -165,4 +166,8 @@
     text-align: center;
     color: #2b292d;
   }
+  &__visitors:hover &__caption{
+    color:#ffffff;
+  }
+  
 }

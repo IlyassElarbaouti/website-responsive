@@ -916,6 +916,9 @@
   text-align: center;
   color: #2b292d;
 }
+.audience__visitors:hover .audience__caption {
+  color: #ffffff;
+}
 
 html {
   font-family: "Work Sans", sans-serif;
